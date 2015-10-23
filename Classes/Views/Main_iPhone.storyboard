@@ -142,6 +142,22 @@ Test</string>
                                     <constraint firstItem="8po-Mc-N33" firstAttribute="top" secondItem="Eoc-tG-TqR" secondAttribute="top" constant="40" id="wCh-Ne-0d3"/>
                                 </constraints>
                             </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="trE-Z2-Fha">
+                                <rect key="frame" x="25" y="460" width="270" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="lRP-f7-drL"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Code A"/>
+                                    <segment title="Code B"/>
+                                    <segment title="Code C"/>
+                                </segments>
+                                <color key="tintColor" red="0.16862745100000001" green="0.52549019610000003" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="wdH-3I-tgZ" eventType="valueChanged" id="I1T-GA-xIV"/>
+                                </connections>
+                            </segmentedControl>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="276" translatesAutoresizingMaskIntoConstraints="NO" id="7dE-Fy-tEd" userLabel="Label - Barcode Note">
                                 <rect key="frame" x="20" y="79" width="276" height="46"/>
                                 <animations/>
@@ -168,32 +184,27 @@ Test</string>
                                     <outletCollection property="gestureRecognizers" destination="fCp-08-aSf" appends="YES" id="jsy-ym-cr3"/>
                                 </connections>
                             </imageView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="trE-Z2-Fha">
-                                <rect key="frame" x="25" y="460" width="270" height="29"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_nimple" translatesAutoresizingMaskIntoConstraints="NO" id="Mgu-fw-IjD">
+                                <rect key="frame" x="98" y="188" width="120" height="120"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="lRP-f7-drL"/>
+                                    <constraint firstAttribute="width" constant="120" id="6MM-hg-yY4"/>
+                                    <constraint firstAttribute="height" constant="120" id="bO6-xj-Vhr"/>
                                 </constraints>
-                                <segments>
-                                    <segment title="Code A"/>
-                                    <segment title="Code B"/>
-                                    <segment title="Code C"/>
-                                </segments>
-                                <color key="tintColor" red="0.16862745100000001" green="0.52549019610000003" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="segmentedControlValueChanged:" destination="wdH-3I-tgZ" eventType="valueChanged" id="I1T-GA-xIV"/>
-                                </connections>
-                            </segmentedControl>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.55294117649999996" green="0.031372549020000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="trE-Z2-Fha" secondAttribute="bottom" constant="80" id="29Q-Yl-vP5"/>
+                            <constraint firstItem="Mgu-fw-IjD" firstAttribute="leading" secondItem="c7o-rU-VLc" secondAttribute="leading" constant="98" id="ArD-CD-kfX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="als-zh-r6e" secondAttribute="trailing" constant="8" id="DYt-Ug-ejK"/>
                             <constraint firstAttribute="trailing" secondItem="trE-Z2-Fha" secondAttribute="trailing" constant="25" id="GaH-kp-78u"/>
                             <constraint firstItem="7dE-Fy-tEd" firstAttribute="top" secondItem="c7o-rU-VLc" secondAttribute="top" constant="79" id="Skj-36-WkH"/>
+                            <constraint firstAttribute="trailing" secondItem="Mgu-fw-IjD" secondAttribute="trailing" constant="102" id="TOS-pd-gJN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6BA-IE-nrP" secondAttribute="trailing" constant="24" id="YoR-iO-iDo"/>
+                            <constraint firstItem="Mgu-fw-IjD" firstAttribute="top" secondItem="7dE-Fy-tEd" secondAttribute="bottom" constant="63" id="aY0-1v-7yW"/>
                             <constraint firstAttribute="trailing" secondItem="7dE-Fy-tEd" secondAttribute="trailing" constant="24" id="avP-7o-vZo"/>
                             <constraint firstItem="trE-Z2-Fha" firstAttribute="leading" secondItem="c7o-rU-VLc" secondAttribute="leading" constant="25" id="d0i-4x-8Ce"/>
                             <constraint firstItem="6BA-IE-nrP" firstAttribute="top" secondItem="c7o-rU-VLc" secondAttribute="topMargin" constant="128" id="ilP-MS-B3Y"/>
@@ -1186,7 +1197,7 @@ Test</string>
                                                 </constraints>
                                                 <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="Kontakt löschen">
-                                                    <color key="titleColor" red="0.76401656870000001" green="0.0" blue="0.24152520299999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.16862745100000001" green="0.52549019610000003" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -1316,21 +1327,21 @@ Test</string>
                         <sections>
                             <tableViewSection headerTitle="" id="F8J-Vz-REL">
                                 <cells>
-                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="106" id="Qz8-JA-z4N">
-                                        <rect key="frame" x="0.0" y="99" width="320" height="106"/>
+                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="210" id="Qz8-JA-z4N">
+                                        <rect key="frame" x="0.0" y="99" width="320" height="210"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qz8-JA-z4N" id="1uM-lw-Jvq">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_nimple" translatesAutoresizingMaskIntoConstraints="NO" id="hxe-6o-OuE">
                                                     <rect key="frame" x="20" y="23" width="60" height="60"/>
                                                     <animations/>
                                                 </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nimple - Networking Simple" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cp-Ie-FVf">
-                                                    <rect key="frame" x="92" y="25" width="216" height="21"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SAG Cards powered by Nimple" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cp-Ie-FVf">
+                                                    <rect key="frame" x="92" y="25" width="235" height="21"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1348,6 +1359,17 @@ Test</string>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tp9-wg-wih">
+                                                    <rect key="frame" x="20" y="90" width="282" height="106"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <string key="text">SAG Cards ist eine für die Software AG gebrandete Version von Nimple - Networking Simple. SAG Cards ist ausschlieﬂlich für die Software AG und deren Mitarbeitenden lizensiert.
+Sollten Sie kein Mitarbeitender der Software AG sein, laden Sie sich bitte die offizielle Version von Nimple über nimple.de herunter.
+</string>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
                                             </subviews>
                                             <animations/>
                                         </tableViewCellContentView>
@@ -1358,7 +1380,7 @@ Test</string>
                             <tableViewSection headerTitle="" id="RZk-tH-mHX">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="faq" id="0GN-9o-Iiw">
-                                        <rect key="frame" x="0.0" y="225" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="329" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0GN-9o-Iiw" id="bdo-BX-Vgb">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1381,7 +1403,7 @@ Test</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="terms" id="HNY-fR-P7U">
-                                        <rect key="frame" x="0.0" y="269" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="373" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HNY-fR-P7U" id="0Qi-Hy-6Te">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1404,7 +1426,7 @@ Test</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="disclaimer" id="I5I-bw-jUn">
-                                        <rect key="frame" x="0.0" y="313" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="417" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I5I-bw-jUn" id="lwJ-Vy-gyP">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1428,7 +1450,7 @@ Test</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="impressum" id="qUc-Ll-Qe0">
-                                        <rect key="frame" x="0.0" y="357" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="461" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qUc-Ll-Qe0" id="fYL-fA-dL8">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1455,7 +1477,7 @@ Test</string>
                             <tableViewSection headerTitle="" id="Ops-Rb-7pM">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="facebook" id="W9B-y7-a1E">
-                                        <rect key="frame" x="0.0" y="421" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="525" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W9B-y7-a1E" id="KkU-aY-akL">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1478,7 +1500,7 @@ Test</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="feedback" id="bHX-Fc-jha" userLabel="Table View Cell - twitter">
-                                        <rect key="frame" x="0.0" y="465" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="569" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bHX-Fc-jha" id="R7S-Jz-LfG">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1501,7 +1523,7 @@ Test</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="share" id="arD-Aq-emk">
-                                        <rect key="frame" x="0.0" y="509" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="613" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="arD-Aq-emk" id="ies-Vs-kax">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1524,7 +1546,7 @@ Test</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="feedback" id="Fk2-ne-SRj">
-                                        <rect key="frame" x="0.0" y="553" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="657" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fk2-ne-SRj" id="x3H-Xb-UQB">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1613,7 +1635,7 @@ Test</string>
         </scene>
     </scenes>
     <resources>
-        <image name="add-contact" width="25" height="25"/>
+        <image name="add-contact" width="49" height="48"/>
         <image name="address" width="36" height="36"/>
         <image name="arrow_up_middle" width="42" height="142"/>
         <image name="arrow_up_short" width="42" height="84"/>
@@ -1621,13 +1643,13 @@ Test</string>
         <image name="edit-card" width="25" height="25"/>
         <image name="email" width="36" height="36"/>
         <image name="ic_nimple" width="76" height="76"/>
-        <image name="ic_round_facebook" width="59" height="59"/>
-        <image name="ic_round_linkedin" width="59" height="59"/>
+        <image name="ic_round_facebook" width="60" height="60"/>
+        <image name="ic_round_linkedin" width="57" height="57"/>
         <image name="ic_round_twitter" width="59" height="59"/>
         <image name="ic_round_xing" width="59" height="59"/>
         <image name="job" width="36" height="36"/>
         <image name="mobile" width="36" height="36"/>
-        <image name="navbar_share_contacts" width="50" height="50"/>
+        <image name="navbar_share_contacts" width="44" height="44"/>
         <image name="phone" width="36" height="36"/>
         <image name="tabbar_contacts" width="21" height="24"/>
         <image name="tabbar_nimple-card" width="23" height="23"/>
@@ -1637,8 +1659,8 @@ Test</string>
         <image name="website" width="36" height="36"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8mu-bB-DzI"/>
-        <segue reference="vl1-xC-OSz"/>
+        <segue reference="aVF-Tt-Z6G"/>
+        <segue reference="Rj6-jk-hGm"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.16862745098039217" green="0.52549019607843139" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
 </document>

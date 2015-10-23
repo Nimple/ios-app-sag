@@ -57,12 +57,13 @@
 - (void)setupNavigationBar
 {
     [[UINavigationBar appearance] setBarTintColor:[self sagMainColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     [[UITabBar appearance] setTintColor:[self sagMainColor]];
 }
 
 - (UIColor *)sagMainColor
 {
-    return [UIColor colorWithRed:76.0/255.0 green:76.0/255.0 blue:76.0/255.0 alpha:1.0];
+    return [UIColor colorWithRed:50.0/255.0 green:50.0/255.0 blue:50.0/255.0 alpha:1.0];
 }
 
 - (UITabBarController *)tabBarController
