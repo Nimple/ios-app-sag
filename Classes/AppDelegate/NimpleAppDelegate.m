@@ -20,7 +20,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #import "NimpleAppDelegate.h"
 #import "NimpleCode.h"
 #import "NimpleModel.h"
-#import "NimplePurchaseModel.h"
 #import "Logging.h"
 
 @implementation NimpleAppDelegate
@@ -44,7 +43,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     [self bootstrapApplication];
     [self setupNavigationBar];
     [self setupTabs];
-    [self setupNotificationCenter];
     return YES;
 }
 
@@ -91,17 +89,13 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     UINavigationController *contactsController = (UINavigationController *)navigationController.childViewControllers[2];
     contactsController.title = NimpleLocalizedString(@"tab_contacts_title");
     
-    UINavigationController *proController = (UINavigationController *)navigationController.childViewControllers[3];
-    proController.title = NimpleLocalizedString(@"tab_pro_title");
-    
     UINavigationController *settingsController = (UINavigationController *)navigationController.childViewControllers[4];
     settingsController.title = NimpleLocalizedString(@"tab_settings_title");
     
     UITabBarItem *card = ([self tabBar].items)[0];
     UITabBarItem *code = ([self tabBar].items)[1];
     UITabBarItem *contacts = ([self tabBar].items)[2];
-    UITabBarItem *pro = ([self tabBar].items)[3];
-    UITabBarItem *settings = ([self tabBar].items)[4];
+    UITabBarItem *settings = ([self tabBar].items)[3];
     
     card.selectedImage = [[UIImage imageNamed:@"tabbar_selected_nimple-card"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     card.image = [[UIImage imageNamed:@"tabbar_nimple-card"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -112,15 +106,8 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     contacts.selectedImage = [[UIImage imageNamed:@"tabbar_selected_contacts"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     contacts.image = [[UIImage imageNamed:@"tabbar_contacts"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    pro.selectedImage = [[UIImage imageNamed:@"tabbar_selected_pro"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    pro.image = [[UIImage imageNamed:@"tabbar_pro"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
     settings.selectedImage = [[UIImage imageNamed:@"tabbar_selected_settings"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     settings.image = [[UIImage imageNamed:@"tabbar_settings"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
-    if ([[NimplePurchaseModel sharedPurchaseModel] isPurchased] || ![self isAbleToPurchase]) {
-        [self removePurchaseProController];
-    }
     
     [[self tabBar] setTintColor:UIColorFromRGB(NIMPLE_MAIN_COLOR)];
 }
@@ -135,40 +122,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     free(model);
     NSLog(@"%@", deviceModel);
     return deviceModel;
-}
-
-- (BOOL)isAbleToPurchase
-{
-    NSString *deviceModel = [self deviceModel];
-    if ([deviceModel isEqual:@"iPhone3,1"])   return NO; // iPhone4
-    if ([deviceModel isEqual:@"iPhone3,2"])   return NO; // iPhone4
-    if ([deviceModel isEqual:@"iPhone3,3"])   return NO; // iPhone4
-    if ([deviceModel isEqual:@"iPhone4,1"])   return NO; // iPhone4S
-    if ([deviceModel containsString:@"iPad"]) return NO;
-    return YES;
-}
-
-- (void)removePurchaseProController
-{
-    NSMutableArray *tbViewControllers = [NSMutableArray arrayWithArray:[self.tabBarController viewControllers]];
-    [tbViewControllers removeObjectAtIndex:3];
-    [self.tabBarController setViewControllers:tbViewControllers];
-    [self.tabBarController setSelectedIndex:0];
-}
-
-#pragma mark - Notification for NimplePurchaseModel
-
-- (void)removePurchaseProController:(NSNotification *)note
-{
-    NSLog(@"Remove purchase pro controller notification received");
-    [self removePurchaseProController];
-    
-}
-
-- (void)setupNotificationCenter
-{
-    NSNotificationCenter *notification = [NSNotificationCenter defaultCenter];
-    [notification addObserver:self selector:@selector(removePurchaseProController:) name:kNimplePurchasedNotification object:nil];
 }
 
 #pragma mark - Core Data integration

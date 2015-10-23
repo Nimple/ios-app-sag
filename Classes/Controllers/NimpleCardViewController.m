@@ -7,7 +7,6 @@
 //
 
 #import "NimpleCardViewController.h"
-#import "NimplePurchaseModel.h"
 #import "VCardCreator.h"
 
 @interface NimpleCardViewController () {
@@ -40,17 +39,6 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    if ([[NimplePurchaseModel sharedPurchaseModel] isPurchased]) {
-        [self.cardSegmentedControl setHidden:NO];
-        [self.cardSegmentedControl setSelectedSegmentIndex:[[NimpleCode sharedCode] dictionaryIndex]];
-        [self.headerCard setHidden:NO];
-        if (self.checkOwnProperties) {
-            [self.headerCard setHidden:YES];
-        }
-    } else {
-        [self.cardSegmentedControl setHidden:YES];
-        [self.headerCard setHidden:YES];
-    }
     [self updateView];
 }
 
@@ -64,23 +52,17 @@
 
 - (void)updateView
 {
-    if ([[NimplePurchaseModel sharedPurchaseModel] isPurchased]) {
-        [self.headerCard setHidden:NO];
-        if (self.checkOwnProperties) {
-            [self.headerCard setHidden:YES];
-        }
-    } else {
-        [self.headerCard setHidden:YES];
-    }
+    [self.cardSegmentedControl setSelectedSegmentIndex:[[NimpleCode sharedCode] dictionaryIndex]];
+    [self.headerCard setHidden:NO];
     if (self.checkOwnProperties) {
-        [self.nimpleCardView setHidden:TRUE];
-        [self.welcomeView setHidden:FALSE];
+        [self.headerCard setHidden:YES];
+        [self.nimpleCardView setHidden:YES];
+        [self.welcomeView setHidden:NO];
         return;
-    } else {
-        [self.nimpleCardView setHidden:FALSE];
-        [self.welcomeView setHidden:TRUE];
-        [self fillNimpleCard];
     }
+    [self.nimpleCardView setHidden:NO];
+    [self.welcomeView setHidden:YES];
+    [self fillNimpleCard];
 }
 
 - (BOOL)checkOwnProperties
@@ -195,31 +177,27 @@
 
 - (IBAction)shareCardButtonClicked:(id)sender
 {
-    if ([[NimplePurchaseModel sharedPurchaseModel] isPurchased]) {
-        NSString *string = [[VCardCreator sharedInstance] createVCardFromNimpleCode:_code];
-        NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-        
-        // send mail with attachment
-        MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
-        mailer.mailComposeDelegate = self;
-        [mailer addAttachmentData:data mimeType:@"text/vcard" fileName:@"contact.vcf"];
-        [self presentViewController:mailer animated:YES completion:nil];
-    }
+    NSString *string = [[VCardCreator sharedInstance] createVCardFromNimpleCode:_code];
+    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
+    
+    // send mail with attachment
+    MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
+    mailer.mailComposeDelegate = self;
+    [mailer addAttachmentData:data mimeType:@"text/vcard" fileName:@"contact.vcf"];
+    [self presentViewController:mailer animated:YES completion:nil];
 }
 
 #pragma mark - Share Card
 
 - (IBAction)shareCard:(id)sender
 {
-    if ([[NimplePurchaseModel sharedPurchaseModel] isPurchased]) {
-        NSString *vcard = [[VCardCreator sharedInstance] createVCardFromNimpleCode:_code];
-        
-        // send mail with attachment
-        MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
-        mailer.mailComposeDelegate = self;
-        [mailer addAttachmentData:[vcard dataUsingEncoding:NSUTF8StringEncoding] mimeType:@"text/vcard" fileName:@"contact.vcf"];
-        [self.navigationController presentViewController:mailer animated:YES completion:nil];
-    }
+    NSString *vcard = [[VCardCreator sharedInstance] createVCardFromNimpleCode:_code];
+    
+    // send mail with attachment
+    MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
+    mailer.mailComposeDelegate = self;
+    [mailer addAttachmentData:[vcard dataUsingEncoding:NSUTF8StringEncoding] mimeType:@"text/vcard" fileName:@"contact.vcf"];
+    [self.navigationController presentViewController:mailer animated:YES completion:nil];
 }
 
 #pragma mark - MFMailComposeViewControllerDelegate
@@ -244,6 +222,5 @@
     [_code switchToDictionaryWithIndexInteger:self.cardSegmentedControl.selectedSegmentIndex];
     [self updateView];
 }
-
 
 @end

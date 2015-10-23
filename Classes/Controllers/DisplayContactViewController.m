@@ -6,10 +6,9 @@
 //  Copyright (c) 2014 nimple. All rights reserved.
 //
 
+#import <AddressBook/AddressBook.h>
+#import <AddressBookUI/ABUnknownPersonViewController.h>
 #import "DisplayContactViewController.h"
-#import "AddressBook/AddressBook.h"
-#import "AddressBookUI/ABUnknownPersonViewController.h"
-#import "NimplePurchaseModel.h"
 #import "VCardCreator.h"
 #import "Logging.h"
 
@@ -35,23 +34,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    if ([[NimplePurchaseModel sharedPurchaseModel] isPurchased]) {
-        self.shareContactButton.hidden = NO;
-    } else {
-        self.shareContactButton.hidden = YES;
-        
-        // TODO maybe adjust
-        NSLayoutConstraint *c = self.shareContactButton.constraints[0];
-        c.constant = 0;
-        
-        [self.shareContactButton layoutIfNeeded];
-    }
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    [self configureScrollView];
+    self.shareContactButton.hidden = NO;
 }
 
 - (void)viewDidDisappear:(BOOL)animated
@@ -67,11 +50,6 @@
     [self.deleteContactButton setTitle:NimpleLocalizedString(@"delete_contact_button") forState:UIControlStateNormal];
     [self.shareContactButton setTitle:NimpleLocalizedString(@"share_contact") forState:UIControlStateNormal];
     self.navBar.title = NimpleLocalizedString(@"display_contact_title");
-}
-
-- (void)configureScrollView
-{
-    
 }
 
 - (void)updateView
@@ -206,15 +184,13 @@
 
 - (IBAction)shareContactButtonClicked:(id)sender
 {
-    if ([[NimplePurchaseModel sharedPurchaseModel] isPurchased]) {
-        NSString *vcard = [[VCardCreator sharedInstance] createVCardFromNimpleContact:self.nimpleContact];
-        
-        // send mail with attachment
-        MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
-        mailer.mailComposeDelegate = self;
-        [mailer addAttachmentData:[vcard dataUsingEncoding:NSUTF8StringEncoding] mimeType:@"text/vcard" fileName:@"contact.vcf"];
-        [self.navigationController presentViewController:mailer animated:YES completion:nil];
-    }
+    NSString *vcard = [[VCardCreator sharedInstance] createVCardFromNimpleContact:self.nimpleContact];
+    
+    // send mail with attachment
+    MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
+    mailer.mailComposeDelegate = self;
+    [mailer addAttachmentData:[vcard dataUsingEncoding:NSUTF8StringEncoding] mimeType:@"text/vcard" fileName:@"contact.vcf"];
+    [self.navigationController presentViewController:mailer animated:YES completion:nil];
 }
 
 - (IBAction)deleteContactButtonClicked:(id)sender

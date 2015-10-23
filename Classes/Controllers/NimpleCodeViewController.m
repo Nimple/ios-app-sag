@@ -8,7 +8,6 @@
 
 #import "NimpleCodeViewController.h"
 #import "NimpleCode.h"
-#import "NimplePurchaseModel.h"
 #import "VCardCreator.h"
 
 static NSMutableDictionary *VCARD_TEMPLATE_DIC;
@@ -39,18 +38,6 @@ static NSMutableDictionary *VCARD_TEMPLATE_DIC;
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    if ([[NimplePurchaseModel sharedPurchaseModel] isPurchased]) {
-        [self.codeSegmentedControl setHidden:NO];
-        [self.codeSegmentedControl setSelectedSegmentIndex:[[NimpleCode sharedCode] dictionaryIndex]];
-        if (![self emptyNimpleCode]) {
-            self.shareCodeLabel.hidden = NO;
-        } else {
-            self.shareCodeLabel.hidden = YES;
-        }
-    } else {
-        [self.codeSegmentedControl setHidden:YES];
-        self.shareCodeLabel.hidden = YES;
-    }
     [self updateView];
 }
 
@@ -65,24 +52,18 @@ static NSMutableDictionary *VCARD_TEMPLATE_DIC;
 
 - (void)updateView
 {
-    if ([[NimplePurchaseModel sharedPurchaseModel] isPurchased]) {
-        if (![self emptyNimpleCode]) {
-            self.shareCodeLabel.hidden = NO;
-        } else {
-            self.shareCodeLabel.hidden = YES;
-        }
-    } else {
-        self.shareCodeLabel.hidden = YES;
-    }
-    if ([self emptyNimpleCode]) {
-        _welcomeView.hidden = NO;
-        _nimpleCodeImage.hidden = YES;
-        _barcodeNoteLabel.hidden = YES;
-    } else {
+    [self.codeSegmentedControl setSelectedSegmentIndex:[[NimpleCode sharedCode] dictionaryIndex]];
+    if (![self emptyNimpleCode]) {
+        self.shareCodeLabel.hidden = NO;
         _welcomeView.hidden = YES;
         _nimpleCodeImage.hidden = NO;
         _barcodeNoteLabel.hidden = NO;
         [self updateQRCode];
+    } else {
+        self.shareCodeLabel.hidden = YES;
+        _welcomeView.hidden = NO;
+        _nimpleCodeImage.hidden = YES;
+        _barcodeNoteLabel.hidden = YES;
     }
 }
 
@@ -103,13 +84,10 @@ static NSMutableDictionary *VCARD_TEMPLATE_DIC;
 
 - (IBAction)codeTapped:(id)sender
 {
-    if ([[NimplePurchaseModel sharedPurchaseModel] isPurchased]) {
-        NSArray *activityItems = @[_nimpleCodeImage.image];
-        UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
-        [self presentViewController:activityVC animated:TRUE completion:nil];
-    }
+    NSArray *activityItems = @[_nimpleCodeImage.image];
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    [self presentViewController:activityVC animated:TRUE completion:nil];
 }
-
 
 #pragma mark - QR-Code generation
 

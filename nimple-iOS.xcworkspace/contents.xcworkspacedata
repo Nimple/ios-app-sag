@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:nimple-iOS.xcodeproj">
+      location = "group:/Users/bjohn/git/nimple-ios/sag-iOS.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

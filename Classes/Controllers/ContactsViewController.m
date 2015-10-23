@@ -10,7 +10,6 @@
 #import "ContactTableViewCell.h"
 #import "NimpleContact.h"
 #import "NimpleModel.h"
-#import "NimplePurchaseModel.h"
 #import "VCardCreator.h"
 
 @interface ContactsViewController () {
@@ -54,21 +53,6 @@
 {
     _contacts = [_model contacts];
     [self.tableView reloadData];
-    if ([[NimplePurchaseModel sharedPurchaseModel] isPurchased]) {
-        [self addExportContactsButton];
-    } else {
-        [self removeExportContactsButton];
-    }
-}
-
-- (void)addExportContactsButton
-{
-    self.navigationItem.leftBarButtonItem = self.exportContactsButton;
-}
-
-- (void)removeExportContactsButton
-{
-    self.navigationItem.leftBarButtonItem = nil;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -110,19 +94,17 @@
 
 - (IBAction)exportContacts:(id)sender
 {
-    if ([[NimplePurchaseModel sharedPurchaseModel] isPurchased]) {
-        NSMutableString *bigvcard = [NSMutableString new];
-        for (NimpleContact* contact in _contacts) {
-            NSString *vcard = [[VCardCreator sharedInstance] createVCardFromNimpleContact:contact];
-            [bigvcard appendString:vcard];
-        }
-        
-        // send mail with attachment
-        MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
-        mailer.mailComposeDelegate = self;
-        [mailer addAttachmentData:[bigvcard dataUsingEncoding:NSUTF8StringEncoding] mimeType:@"text/vcard" fileName:@"contacts.vcf"];
-        [self.navigationController presentViewController:mailer animated:YES completion:nil];
+    NSMutableString *bigvcard = [NSMutableString new];
+    for (NimpleContact* contact in _contacts) {
+        NSString *vcard = [[VCardCreator sharedInstance] createVCardFromNimpleContact:contact];
+        [bigvcard appendString:vcard];
     }
+    
+    // send mail with attachment
+    MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
+    mailer.mailComposeDelegate = self;
+    [mailer addAttachmentData:[bigvcard dataUsingEncoding:NSUTF8StringEncoding] mimeType:@"text/vcard" fileName:@"contacts.vcf"];
+    [self.navigationController presentViewController:mailer animated:YES completion:nil];
 }
 
 #pragma mark - MFMailComposeViewControllerDelegate

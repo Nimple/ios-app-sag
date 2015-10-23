@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B1B7F3C199A24400098DB91 /* EditAddressInputViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B7F3B199A24400098DB91 /* EditAddressInputViewCell.m */; };
+		4B220DC719A40BC900163E5C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B220DC619A40BC900163E5C /* Main_iPhone.storyboard */; };
+		4B4E678019A0FFBB00784D07 /* VCardCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E677F19A0FFBB00784D07 /* VCardCreator.m */; };
+		4B7E50A3199C087B00C174EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B7E5099199C087B00C174EE /* Localizable.strings */; };
+		4B7E50A6199C1EE400C174EE /* NimpleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7E50A5199C1EE400C174EE /* NimpleModel.m */; };
+		4BC48748199E218100FA0BE4 /* NimpleCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC48747199E218100FA0BE4 /* NimpleCode.m */; };
+		4BC7816019CD85D50026F72E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC7815F19CD85D50026F72E /* StoreKit.framework */; };
+		4BF2C62E1AA2436D00B62DE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF2C62D1AA2436D00B62DE8 /* main.m */; };
+		946A20D5F5C647489F69E299 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A798CAD0311D484FB6A0B5A1 /* libPods.a */; };
+		9E6858BA18C0F47E00C7D889 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6858B918C0F47E00C7D889 /* AVFoundation.framework */; };
+		9E9CAB2018C11C7F00A4FE27 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9CAB1F18C11C7F00A4FE27 /* CoreImage.framework */; };
+		B526D76D1909AB1000055177 /* Logging.m in Sources */ = {isa = PBXBuildFile; fileRef = B526D76C1909AB1000055177 /* Logging.m */; };
+		B53CD23A1904AAB200928B43 /* VCardParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B53CD2391904AAB200928B43 /* VCardParser.m */; };
+		B5408B171904A1D60033DF1A /* NimpleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5408AF61904A1D60033DF1A /* NimpleAppDelegate.m */; };
+		B5408B181904A1D60033DF1A /* BarCodeReaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5408AF91904A1D60033DF1A /* BarCodeReaderController.m */; };
+		B5408B191904A1D60033DF1A /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5408AFB1904A1D60033DF1A /* ContactsViewController.m */; };
+		B5408B1A1904A1D60033DF1A /* EditNimpleCodeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5408AFD1904A1D60033DF1A /* EditNimpleCodeTableViewController.m */; };
+		B5408B1C1904A1D60033DF1A /* NimpleCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5408B011904A1D60033DF1A /* NimpleCardViewController.m */; };
+		B5408B1D1904A1D60033DF1A /* NimpleCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5408B031904A1D60033DF1A /* NimpleCodeViewController.m */; };
+		B5408B1E1904A1D60033DF1A /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5408B051904A1D60033DF1A /* SettingsTableViewController.m */; };
+		B5408B201904A1D60033DF1A /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5408B091904A1D60033DF1A /* DataModel.xcdatamodeld */; };
+		B5408B211904A1D60033DF1A /* NimpleContact.m in Sources */ = {isa = PBXBuildFile; fileRef = B5408B0C1904A1D60033DF1A /* NimpleContact.m */; };
+		B5408B221904A1D60033DF1A /* ConnectSocialProfileViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5408B0F1904A1D60033DF1A /* ConnectSocialProfileViewCell.m */; };
+		B5408B231904A1D60033DF1A /* ContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5408B111904A1D60033DF1A /* ContactTableViewCell.m */; };
+		B5408B241904A1D60033DF1A /* EditInputViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5408B131904A1D60033DF1A /* EditInputViewCell.m */; };
+		B5408B2F1904A2550033DF1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5408B2A1904A2550033DF1A /* Images.xcassets */; };
+		B5BE972B19053FD100F49DEC /* DisplayContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BE972A19053FD100F49DEC /* DisplayContactViewController.m */; };
+		B5E1AE041909C3330051589D /* Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E1AE031909C3330051589D /* Crypto.m */; };
+		D10ADD4118D11961001450E8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D10ADD4018D11961001450E8 /* Social.framework */; };
+		D151DA7118B432F700C5850F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D151DA7018B432F700C5850F /* Foundation.framework */; };
+		D151DA7318B432F700C5850F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D151DA7218B432F700C5850F /* CoreGraphics.framework */; };
+		D151DA7518B432F700C5850F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D151DA7418B432F700C5850F /* UIKit.framework */; };
+		D1B25C4B18D4B9890046A333 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B25C4A18D4B9890046A333 /* Accounts.framework */; };
+		D1CB490218C4EE9700414E5D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CB490118C4EE9700414E5D /* MessageUI.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		D1CB490718C500BD00414E5D /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CB490618C500BD00414E5D /* AddressBookUI.framework */; };
+		D1CB490918C500C800414E5D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CB490818C500C800414E5D /* AddressBook.framework */; };
+		D1E55F1718C1F1450035D828 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E55F1618C1F1450035D828 /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3EF9E31647B658E0D93E45F9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4B1B7F3A199A24400098DB91 /* EditAddressInputViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAddressInputViewCell.h; sourceTree = "<group>"; };
+		4B1B7F3B199A24400098DB91 /* EditAddressInputViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAddressInputViewCell.m; sourceTree = "<group>"; };
+		4B220DC619A40BC900163E5C /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		4B4E677E19A0FFBB00784D07 /* VCardCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCardCreator.h; sourceTree = "<group>"; };
+		4B4E677F19A0FFBB00784D07 /* VCardCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCardCreator.m; sourceTree = "<group>"; };
+		4B7E509A199C087B00C174EE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4B7E509B199C087B00C174EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4B7E509C199C087B00C174EE /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4B7E509D199C087B00C174EE /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4B7E509E199C087B00C174EE /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4B7E509F199C087B00C174EE /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4B7E50A0199C087B00C174EE /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4B7E50A1199C087B00C174EE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4B7E50A2199C087B00C174EE /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4B7E50A4199C1EE400C174EE /* NimpleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NimpleModel.h; sourceTree = "<group>"; };
+		4B7E50A5199C1EE400C174EE /* NimpleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NimpleModel.m; sourceTree = "<group>"; };
+		4BC48746199E218100FA0BE4 /* NimpleCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NimpleCode.h; sourceTree = "<group>"; };
+		4BC48747199E218100FA0BE4 /* NimpleCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NimpleCode.m; sourceTree = "<group>"; };
+		4BC7815F19CD85D50026F72E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4BD6F144198AFAAE003C7B6F /* DataModel 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DataModel 3.xcdatamodel"; sourceTree = "<group>"; };
+		4BF2C62D1AA2436D00B62DE8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		4BFDE0121AA511B500F96F44 /* DataModel 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DataModel 4.xcdatamodel"; sourceTree = "<group>"; };
+		9E6858B918C0F47E00C7D889 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9E9CAB1F18C11C7F00A4FE27 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		A798CAD0311D484FB6A0B5A1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B501C8FB19071D40008F02CF /* DataModel 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DataModel 2.xcdatamodel"; sourceTree = "<group>"; };
+		B526D76B1909AB1000055177 /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
+		B526D76C1909AB1000055177 /* Logging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logging.m; sourceTree = "<group>"; };
+		B53CD2381904AAB200928B43 /* VCardParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCardParser.h; sourceTree = "<group>"; };
+		B53CD2391904AAB200928B43 /* VCardParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCardParser.m; sourceTree = "<group>"; };
+		B5408AF11904A1A70033DF1A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = Externals/FacebookSDK.framework; sourceTree = "<group>"; };
+		B5408AF51904A1D60033DF1A /* NimpleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NimpleAppDelegate.h; sourceTree = "<group>"; };
+		B5408AF61904A1D60033DF1A /* NimpleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NimpleAppDelegate.m; sourceTree = "<group>"; };
+		B5408AF81904A1D60033DF1A /* BarCodeReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarCodeReaderController.h; sourceTree = "<group>"; };
+		B5408AF91904A1D60033DF1A /* BarCodeReaderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BarCodeReaderController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B5408AFA1904A1D60033DF1A /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		B5408AFB1904A1D60033DF1A /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		B5408AFC1904A1D60033DF1A /* EditNimpleCodeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditNimpleCodeTableViewController.h; sourceTree = "<group>"; };
+		B5408AFD1904A1D60033DF1A /* EditNimpleCodeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = EditNimpleCodeTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B5408B001904A1D60033DF1A /* NimpleCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NimpleCardViewController.h; sourceTree = "<group>"; };
+		B5408B011904A1D60033DF1A /* NimpleCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NimpleCardViewController.m; sourceTree = "<group>"; };
+		B5408B021904A1D60033DF1A /* NimpleCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NimpleCodeViewController.h; sourceTree = "<group>"; };
+		B5408B031904A1D60033DF1A /* NimpleCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NimpleCodeViewController.m; sourceTree = "<group>"; };
+		B5408B041904A1D60033DF1A /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		B5408B051904A1D60033DF1A /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		B5408B0A1904A1D60033DF1A /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		B5408B0B1904A1D60033DF1A /* NimpleContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NimpleContact.h; sourceTree = "<group>"; };
+		B5408B0C1904A1D60033DF1A /* NimpleContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NimpleContact.m; sourceTree = "<group>"; };
+		B5408B0E1904A1D60033DF1A /* ConnectSocialProfileViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectSocialProfileViewCell.h; sourceTree = "<group>"; };
+		B5408B0F1904A1D60033DF1A /* ConnectSocialProfileViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ConnectSocialProfileViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B5408B101904A1D60033DF1A /* ContactTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactTableViewCell.h; sourceTree = "<group>"; };
+		B5408B111904A1D60033DF1A /* ContactTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewCell.m; sourceTree = "<group>"; };
+		B5408B121904A1D60033DF1A /* EditInputViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditInputViewCell.h; sourceTree = "<group>"; };
+		B5408B131904A1D60033DF1A /* EditInputViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditInputViewCell.m; sourceTree = "<group>"; };
+		B5408B2A1904A2550033DF1A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B55B895619049AC400561F17 /* sag-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "sag-iOS-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B55B895719049AC400561F17 /* sag-iOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sag-iOS-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		B5BE972919053FD100F49DEC /* DisplayContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayContactViewController.h; sourceTree = "<group>"; };
+		B5BE972A19053FD100F49DEC /* DisplayContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DisplayContactViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B5E1AE021909C3330051589D /* Crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crypto.h; sourceTree = "<group>"; };
+		B5E1AE031909C3330051589D /* Crypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crypto.m; sourceTree = "<group>"; };
+		CED6382DB2A994D88214871A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D10ADD4018D11961001450E8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		D151DA6D18B432F700C5850F /* sag-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sag-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D151DA7018B432F700C5850F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D151DA7218B432F700C5850F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D151DA7418B432F700C5850F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D1B25C4A18D4B9890046A333 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		D1CB490118C4EE9700414E5D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D1CB490618C500BD00414E5D /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		D1CB490818C500C800414E5D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		D1E55F1618C1F1450035D828 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D151DA6A18B432F700C5850F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1CB490218C4EE9700414E5D /* MessageUI.framework in Frameworks */,
+				4BC7816019CD85D50026F72E /* StoreKit.framework in Frameworks */,
+				D1B25C4B18D4B9890046A333 /* Accounts.framework in Frameworks */,
+				D10ADD4118D11961001450E8 /* Social.framework in Frameworks */,
+				D1CB490918C500C800414E5D /* AddressBook.framework in Frameworks */,
+				D1CB490718C500BD00414E5D /* AddressBookUI.framework in Frameworks */,
+				D1E55F1718C1F1450035D828 /* CoreData.framework in Frameworks */,
+				9E9CAB2018C11C7F00A4FE27 /* CoreImage.framework in Frameworks */,
+				9E6858BA18C0F47E00C7D889 /* AVFoundation.framework in Frameworks */,
+				D151DA7318B432F700C5850F /* CoreGraphics.framework in Frameworks */,
+				D151DA7518B432F700C5850F /* UIKit.framework in Frameworks */,
+				D151DA7118B432F700C5850F /* Foundation.framework in Frameworks */,
+				946A20D5F5C647489F69E299 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3600F965397F31D5EE574954 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CED6382DB2A994D88214871A /* Pods.debug.xcconfig */,
+				3EF9E31647B658E0D93E45F9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4B7E5098199C087B00C174EE /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				4B7E5099199C087B00C174EE /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		B5408AF31904A1D60033DF1A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B5408AF41904A1D60033DF1A /* AppDelegate */,
+				B5408AF71904A1D60033DF1A /* Controllers */,
+				B5408B061904A1D60033DF1A /* Helpers */,
+				B5408B081904A1D60033DF1A /* Models */,
+				B5408B0D1904A1D60033DF1A /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B5408AF41904A1D60033DF1A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B5408AF51904A1D60033DF1A /* NimpleAppDelegate.h */,
+				B5408AF61904A1D60033DF1A /* NimpleAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B5408AF71904A1D60033DF1A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5408AF81904A1D60033DF1A /* BarCodeReaderController.h */,
+				B5408AF91904A1D60033DF1A /* BarCodeReaderController.m */,
+				B5408AFA1904A1D60033DF1A /* ContactsViewController.h */,
+				B5408AFB1904A1D60033DF1A /* ContactsViewController.m */,
+				B5408AFC1904A1D60033DF1A /* EditNimpleCodeTableViewController.h */,
+				B5408AFD1904A1D60033DF1A /* EditNimpleCodeTableViewController.m */,
+				B5408B001904A1D60033DF1A /* NimpleCardViewController.h */,
+				B5408B011904A1D60033DF1A /* NimpleCardViewController.m */,
+				B5408B021904A1D60033DF1A /* NimpleCodeViewController.h */,
+				B5408B031904A1D60033DF1A /* NimpleCodeViewController.m */,
+				B5408B041904A1D60033DF1A /* SettingsTableViewController.h */,
+				B5408B051904A1D60033DF1A /* SettingsTableViewController.m */,
+				B5BE972919053FD100F49DEC /* DisplayContactViewController.h */,
+				B5BE972A19053FD100F49DEC /* DisplayContactViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B5408B061904A1D60033DF1A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B5E1AE021909C3330051589D /* Crypto.h */,
+				B5E1AE031909C3330051589D /* Crypto.m */,
+				B526D76B1909AB1000055177 /* Logging.h */,
+				B526D76C1909AB1000055177 /* Logging.m */,
+				4B4E677E19A0FFBB00784D07 /* VCardCreator.h */,
+				4B4E677F19A0FFBB00784D07 /* VCardCreator.m */,
+				B53CD2381904AAB200928B43 /* VCardParser.h */,
+				B53CD2391904AAB200928B43 /* VCardParser.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B5408B081904A1D60033DF1A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5408B091904A1D60033DF1A /* DataModel.xcdatamodeld */,
+				B5408B0B1904A1D60033DF1A /* NimpleContact.h */,
+				B5408B0C1904A1D60033DF1A /* NimpleContact.m */,
+				4B7E50A4199C1EE400C174EE /* NimpleModel.h */,
+				4B7E50A5199C1EE400C174EE /* NimpleModel.m */,
+				4BC48746199E218100FA0BE4 /* NimpleCode.h */,
+				4BC48747199E218100FA0BE4 /* NimpleCode.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5408B0D1904A1D60033DF1A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B220DC619A40BC900163E5C /* Main_iPhone.storyboard */,
+				B5408B0E1904A1D60033DF1A /* ConnectSocialProfileViewCell.h */,
+				B5408B0F1904A1D60033DF1A /* ConnectSocialProfileViewCell.m */,
+				B5408B101904A1D60033DF1A /* ContactTableViewCell.h */,
+				B5408B111904A1D60033DF1A /* ContactTableViewCell.m */,
+				B5408B121904A1D60033DF1A /* EditInputViewCell.h */,
+				B5408B131904A1D60033DF1A /* EditInputViewCell.m */,
+				4B1B7F3A199A24400098DB91 /* EditAddressInputViewCell.h */,
+				4B1B7F3B199A24400098DB91 /* EditAddressInputViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5408B291904A2550033DF1A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5408B2A1904A2550033DF1A /* Images.xcassets */,
+				4B7E5098199C087B00C174EE /* Strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B55B8919190498FB00561F17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BF2C62D1AA2436D00B62DE8 /* main.m */,
+				B55B895619049AC400561F17 /* sag-iOS-Info.plist */,
+				B55B895719049AC400561F17 /* sag-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = "nimple-iOS";
+			sourceTree = "<group>";
+		};
+		D151DA6418B432F700C5850F = {
+			isa = PBXGroup;
+			children = (
+				B5408AF31904A1D60033DF1A /* Classes */,
+				B5408B291904A2550033DF1A /* Resources */,
+				B55B8919190498FB00561F17 /* Supporting Files */,
+				D151DA6F18B432F700C5850F /* Frameworks */,
+				D151DA6E18B432F700C5850F /* Products */,
+				3600F965397F31D5EE574954 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D151DA6E18B432F700C5850F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D151DA6D18B432F700C5850F /* sag-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D151DA6F18B432F700C5850F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BC7815F19CD85D50026F72E /* StoreKit.framework */,
+				D1B25C4A18D4B9890046A333 /* Accounts.framework */,
+				D10ADD4018D11961001450E8 /* Social.framework */,
+				D1CB490818C500C800414E5D /* AddressBook.framework */,
+				D1CB490618C500BD00414E5D /* AddressBookUI.framework */,
+				D1CB490118C4EE9700414E5D /* MessageUI.framework */,
+				D1E55F1618C1F1450035D828 /* CoreData.framework */,
+				9E9CAB1F18C11C7F00A4FE27 /* CoreImage.framework */,
+				9E6858B918C0F47E00C7D889 /* AVFoundation.framework */,
+				D151DA7018B432F700C5850F /* Foundation.framework */,
+				D151DA7218B432F700C5850F /* CoreGraphics.framework */,
+				D151DA7418B432F700C5850F /* UIKit.framework */,
+				B5408AF11904A1A70033DF1A /* FacebookSDK.framework */,
+				A798CAD0311D484FB6A0B5A1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D151DA6C18B432F700C5850F /* sag-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D151DAA218B432F800C5850F /* Build configuration list for PBXNativeTarget "sag-iOS" */;
+			buildPhases = (
+				08D412D5137F47E28DDF7534 /* Check Pods Manifest.lock */,
+				D151DA6918B432F700C5850F /* Sources */,
+				D151DA6A18B432F700C5850F /* Frameworks */,
+				D151DA6B18B432F700C5850F /* Resources */,
+				6F2291329DE145489E46EDA6 /* Copy Pods Resources */,
+				3E595C3A2B0CD24F998FEC2A /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sag-iOS";
+			productName = "nimple-iOS";
+			productReference = D151DA6D18B432F700C5850F /* sag-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D151DA6518B432F700C5850F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Nimple;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = nimple;
+				TargetAttributes = {
+					D151DA6C18B432F700C5850F = {
+						DevelopmentTeam = BRCR8B3TM9;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D151DA6818B432F700C5850F /* Build configuration list for PBXProject "sag-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				es,
+				fr,
+				it,
+				pt,
+				pl,
+				ru,
+				tr,
+			);
+			mainGroup = D151DA6418B432F700C5850F;
+			productRefGroup = D151DA6E18B432F700C5850F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D151DA6C18B432F700C5850F /* sag-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D151DA6B18B432F700C5850F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B7E50A3199C087B00C174EE /* Localizable.strings in Resources */,
+				B5408B2F1904A2550033DF1A /* Images.xcassets in Resources */,
+				4B220DC719A40BC900163E5C /* Main_iPhone.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08D412D5137F47E28DDF7534 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3E595C3A2B0CD24F998FEC2A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F2291329DE145489E46EDA6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D151DA6918B432F700C5850F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5408B1E1904A1D60033DF1A /* SettingsTableViewController.m in Sources */,
+				B5E1AE041909C3330051589D /* Crypto.m in Sources */,
+				4B1B7F3C199A24400098DB91 /* EditAddressInputViewCell.m in Sources */,
+				B5BE972B19053FD100F49DEC /* DisplayContactViewController.m in Sources */,
+				B5408B201904A1D60033DF1A /* DataModel.xcdatamodeld in Sources */,
+				4B4E678019A0FFBB00784D07 /* VCardCreator.m in Sources */,
+				B5408B1C1904A1D60033DF1A /* NimpleCardViewController.m in Sources */,
+				B5408B171904A1D60033DF1A /* NimpleAppDelegate.m in Sources */,
+				4BF2C62E1AA2436D00B62DE8 /* main.m in Sources */,
+				B5408B191904A1D60033DF1A /* ContactsViewController.m in Sources */,
+				B5408B1D1904A1D60033DF1A /* NimpleCodeViewController.m in Sources */,
+				B5408B181904A1D60033DF1A /* BarCodeReaderController.m in Sources */,
+				4B7E50A6199C1EE400C174EE /* NimpleModel.m in Sources */,
+				B5408B241904A1D60033DF1A /* EditInputViewCell.m in Sources */,
+				B5408B1A1904A1D60033DF1A /* EditNimpleCodeTableViewController.m in Sources */,
+				B526D76D1909AB1000055177 /* Logging.m in Sources */,
+				B5408B221904A1D60033DF1A /* ConnectSocialProfileViewCell.m in Sources */,
+				B53CD23A1904AAB200928B43 /* VCardParser.m in Sources */,
+				B5408B211904A1D60033DF1A /* NimpleContact.m in Sources */,
+				B5408B231904A1D60033DF1A /* ContactTableViewCell.m in Sources */,
+				4BC48748199E218100FA0BE4 /* NimpleCode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4B7E5099199C087B00C174EE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B7E509A199C087B00C174EE /* de */,
+				4B7E509B199C087B00C174EE /* en */,
+				4B7E509C199C087B00C174EE /* es */,
+				4B7E509D199C087B00C174EE /* fr */,
+				4B7E509E199C087B00C174EE /* it */,
+				4B7E509F199C087B00C174EE /* pl */,
+				4B7E50A0199C087B00C174EE /* pt */,
+				4B7E50A1199C087B00C174EE /* ru */,
+				4B7E50A2199C087B00C174EE /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D151DAA018B432F800C5850F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sebastian Lang (NDQDXE29S6)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "e797b283-1480-4920-8050-b3dbe9fba308";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D151DAA118B432F800C5850F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Appstronauten GbR (BRCR8B3TM9)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "a525488d-2d86-47e1-a5da-7b7d78fa3242";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D151DAA318B432F800C5850F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED6382DB2A994D88214871A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/sag-iOS-Prefix.pch";
+				INFOPLIST_FILE = "sag-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.nimple.sag-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D151DAA418B432F800C5850F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF9E31647B658E0D93E45F9 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/sag-iOS-Prefix.pch";
+				INFOPLIST_FILE = "sag-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.nimple.sag-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D151DA6818B432F700C5850F /* Build configuration list for PBXProject "sag-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D151DAA018B432F800C5850F /* Debug */,
+				D151DAA118B432F800C5850F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D151DAA218B432F800C5850F /* Build configuration list for PBXNativeTarget "sag-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D151DAA318B432F800C5850F /* Debug */,
+				D151DAA418B432F800C5850F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B5408B091904A1D60033DF1A /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4BFDE0121AA511B500F96F44 /* DataModel 4.xcdatamodel */,
+				B501C8FB19071D40008F02CF /* DataModel 2.xcdatamodel */,
+				4BD6F144198AFAAE003C7B6F /* DataModel 3.xcdatamodel */,
+				B5408B0A1904A1D60033DF1A /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 4BFDE0121AA511B500F96F44 /* DataModel 4.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D151DA6518B432F700C5850F /* Project object */;
+}
