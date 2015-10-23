@@ -1,0 +1,132 @@
+/*
+ Localizable.strings
+ nimple-iOS
+ 
+ Created by Ben John on 30/04/14.
+ Copyright (c) 2014 nimple. All rights reserved.
+ */
+
+"personal_label" = "KIŞISEL";
+"firstname_label" = "Ad";
+"lastname_label" = "Soyad";
+"phonenumber_label" = "Telefon numarası";
+"mobilenumber_label" = "Cep numarası";
+"mail_label" = "E-posta adresi";
+"business_label" = "TICARI";
+"company_label" = "Şirket/üniversite/okul";
+"job_label" = "İş";
+"website_label" = "internet sitesi";
+"street_label" = "Cadde";
+"postal_label" = "posta kodu";
+"city_label" = "Şehir";
+"address_label" = "Adres";
+"social_label" = "sosyal ağlar";
+"facebook_label" = "facebook";
+"twitter_label" = "twittter";
+"xing_label" = "xing";
+"linkedin_label" = "linkedin";
+"connected_label" = "Bağlandı";
+"fistname_first_contact_label" = "Nimple";
+"lastname_first_contact_label" = "App";
+"phone_first_contact_label" = "http://www.nimpleapp.com";
+"mail_first_contact_label" = "feedback.ios@nimple.de";
+"company_first_contact_label" = "ilk iletişim";
+"date_format" = "dd.MM.yyyy HH:mm";
+
+"detail_facebook_label" = "facebook detayı";
+"detail_twitter_label" = "twitter detayı";
+"detail_xing_label" = "xing detayı";
+"detail_linkedin_label" = "linkedin detayı";
+
+"settings.feedback-text" = "Geri Bildirim Ayarları";
+"settings.feedback-header" = "Geri Bildirim Ayarları";
+"settings.share-text" = "Paylaşma Ayarları: www.nimpleapp.com";
+"settings.share-header" = "Paylaşma Ayarları";
+
+"msg_box_wrong_code_header" = "Yanlış Kod";
+"msg_box_wrong_code_text" = "Yanlış Kod";
+"msg_box_wrong_code_activity" = "Yanlış Kod geçmişi";
+
+"msg_box_right_code_header" = "Doğru Kod";
+"msg_box_right_code_text" = "Doğru Kod";
+"msg_box_right_code_activity" = "Doğru Kod geçmişi";
+
+"msg_box_delete_contact_title" = "Kişiyi Sil?";
+"msg_box_delete_contact_activity1" = "silinmişler geçmişi";
+"msg_box_delete_contact_activity2" = "Vazgeç";
+
+"msg_box_duplicated_contact_title" = "bu kişi zaten var";
+"msg_box_duplicated_code_activity" = "bu kişi zaten var";
+
+"msg_box_save_contact_title" = "Adres defterine bu kişiyi kaydet";
+"msg_box_save_contact_activity1" = "kişiyi kaydet";
+"msg_box_save_contact_activity2" = "Vazgeç";
+
+"contacts_no_access_title" = "Bu uygulama kişilerinize erişemiyor";
+"contacts_no_access_text" = "Lütfen kişilerinize erişim izni vermek için iPhone Ayarları > Gizlilik > Kişiler > Nimple.";
+
+"error_names" = "hata";
+
+"display_contact_notes_label" = "Notlar";
+"add_to_addressbook_button" = "Adres defterine  bu kişiyi kaydet";
+"delete_contact_button" = "Kişiyi sil";
+
+"settings_faq" = "sık sorulan sorular";
+"settings_legal" = "Koşullar";
+"settings_disclaimer" = "Gizlilik";
+"settings_imprint" = "Baskı bilgileri";
+"settings_facebook" = "Facebook Nimple";
+"settings_twitter" = "Twitter Nimple";
+"settings_share" = "Nimple tavsiye";
+"settings_feedback" = "Feedback";
+
+"tutorial_add_text" = "ekle";
+"tutorial_edit_text" = "düzenle";
+
+"display_contact_title" = "kişiyi görüntüle";
+"nimple_card_label" = "Kart";
+"nimple_code_title" = "Kod";
+"settings_title" = "Ayarlar";
+"contacts_title" = "Kişiler";
+"scanner_label" = "tarayıcı";
+"edit_nimple_code_title" = "Işlemek";
+
+"nimple_code_description" = "kod açıklaması";
+
+"nimple_code_footer" = "Sizin kod barkod okuyucu veya Nimple ile taranabilir";
+
+"tab_nimple_card_title" = "Kart";
+"tab_nimple_code_title" = "Kod";
+"tab_contacts_title" = "Kişiler";
+"tab_pro_title" = "Pro Version";
+"tab_settings_title" = "Ayarlar";
+
+"twitter_not_found_alert_title" = "Hiçbir Twitter profil.";
+"twitter_not_found_alert_message" = "Twitter Giriş Yapın için iPhone Ayarları > Twitter.";
+
+"twitter_not_allowed_alert_title" = "Twitter'da erişim yok.";
+"twitter_not_allowed_alert_message" = "Lütfen Twitter erişim izni vermek için iPhone Ayarları > Twitter > Nimple.";
+
+"msg_box_social_logout_facebook_title" = "Ağ Facebook bağlantısını kes?";
+"msg_box_social_logout_twitter_title" = "Ağ Twitter bağlantısını kes?";
+"msg_box_social_logout_xing_title" = "Ağ XING bağlantısını kes?";
+"msg_box_social_logout_linkedin_title" = "Ağ LinkedIn bağlantısını kes?";
+
+"msg_box_social_logout_activity1" = "Bağlanti kes";
+"msg_box_social_logout_activity2" = "Vazgeç";
+
+"pro_intro_text" = "Nimple Pro gibi, size yeni ve kullanışlı özellikler verecek:";
+"pro_feature_A" = "E-posta yoluyla kart, kodu ve kişileri gönderin.";
+"pro_feature_B" = "Birden fazla kart ve kodları oluşturun (Örneğin, şirket veya Üniversite için).";
+
+"share_contact" = "İletişim gönder";
+
+"alertview_camera_permission_title" = "No Camera-Access";
+"alertview_camera_permission_text" = "Nimple has no access to use your camera, thus Nimple is not able to scan QR-Codes. You can allow Nimple to use your camera by opening Settings -> Privacy -> Camera.";
+"alertview_camera_permission_button" = "Okay";
+
+"header_code" = "Onu göndermek için bir kod dokunun";
+"header_card" = "Gemi için haritayı dokunun";
+
+"unlock_pro_button" = "Pro sürümü satın";
+"restore_pro_button" = "Pro sürümü geri yüklemek";

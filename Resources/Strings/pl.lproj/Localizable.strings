@@ -1,0 +1,132 @@
+/*
+ Localizable.strings
+ nimple-iOS
+ 
+ Created by Ben John on 30/04/14.
+ Copyright (c) 2014 nimple. All rights reserved.
+ */
+
+"personal_label" = "OSOBIŚCIE";
+"firstname_label" = "Imię";
+"lastname_label" = "Nazwisko";
+"phonenumber_label" = "Numer telefonu";
+"mobilenumber_label" = "Numer telefonu komórkowego";
+"mail_label" = "Adres e-mail";
+"business_label" = "HANDLOWY";
+"company_label" = "Firma/uniwersytet/szkoła";
+"job_label" = "Stanowisko/pozycja";
+"website_label" = "Witryna";
+"street_label" = "Ulica";
+"postal_label" = "Kod";
+"city_label" = "Miasto";
+"address_label" = "Adres";
+"social_label" = "SIECI SPOŁECZNYCH";
+"facebook_label" = "połączyć się z Facebookiem";
+"twitter_label" = "połączyć się z Twitterem";
+"xing_label" = "połączyć się z XING";
+"linkedin_label" = "połączyć się z LinkedIn";
+"connected_label" = "podłączony";
+"fistname_first_contact_label" = "Nimple";
+"lastname_first_contact_label" = "App";
+"phone_first_contact_label" = "http://www.nimpleapp.com";
+"mail_first_contact_label" = "feedback.ios@nimple.de";
+"company_first_contact_label" = "Twój pierwszy kontakt";
+"date_format" = "dd.MM.yyyy HH:mm";
+
+"detail_facebook_label" = "Bez profil Facebooka";
+"detail_twitter_label" = "Bez profil Twittera";
+"detail_xing_label" = "Bez profil XING";
+"detail_linkedin_label" = "Bez profil LinkedIn";
+
+"settings.feedback-text" = "Lubię swoją aplikację";
+"settings.feedback-header" = "[Feedback] Nimple iOS App";
+"settings.share-text" = "Używam aplikacji Nimple - Networking Simple. Sciąganie: www.nimpleapp.com";
+"settings.share-header" = "Nimple - Networking Simple App";
+
+"msg_box_wrong_code_header" = "Błędny kod";
+"msg_box_wrong_code_text" = "Kod nie może być skanowane.";
+"msg_box_wrong_code_activity" = "Cofnij ";
+
+"msg_box_right_code_header" = "Kontakt został znaleziony";
+"msg_box_right_code_text" = "Kontakt został dodany do twoich kontaktów";
+"msg_box_right_code_activity" = "Gotowe";
+
+"msg_box_delete_contact_title" = "Usuń kontakt?";
+"msg_box_delete_contact_activity1" = "Usuń";
+"msg_box_delete_contact_activity2" = "Anuluj";
+
+"msg_box_duplicated_contact_title" = "Kontakt już istnieje.";
+"msg_box_duplicated_code_activity" = "Gotowe";
+
+"msg_box_save_contact_title" = "Dodaj kontakt do listy kontaktowej?";
+"msg_box_save_contact_activity1" = "Zapisz";
+"msg_box_save_contact_activity2" = "Anuluj";
+
+"contacts_no_access_title" = "Brak dostępu do kontaktów";
+"contacts_no_access_text" = "Ta aplikacja nie ma dostępu do twoich kontaktów. Włącz dostęp do kontaktów w Ustawieniach iPhone'a > Prywatność > Kontakty > Nimple.";
+
+"error_names" = "Wpisz swoje imię i nazwisko.";
+
+"display_contact_notes_label" = "Notatki";
+"add_to_addressbook_button" = "Dodaj kontakt do listy kontaktowej";
+"delete_contact_button" = "Usuń kontakt";
+
+"settings_faq" = "Pomoc";
+"settings_legal" = "Regulamin";
+"settings_disclaimer" = "Prywatność";
+"settings_imprint" = "Impressum";
+"settings_facebook" = "Nimple na Facebooku";
+"settings_twitter" = "Nimple na Twitterze";
+"settings_share" = "Polecam Nimple";
+"settings_feedback" = "Feedback";
+
+"tutorial_add_text" = "Skanuj nowy kontakt";
+"tutorial_edit_text" = "Wpisz daty, by stworzyć swoją\nkartę i kod";
+
+"display_contact_title" = "Detalami";
+"nimple_card_label" = "Moja karta";
+"nimple_code_title" = "Mój kod";
+"settings_title" = "Ustawieniach";
+"contacts_title" = "Moje kontakty";
+"scanner_label" = "Dodaj kontakt";
+"edit_nimple_code_title" = "Edycja";
+
+"nimple_code_description" = "Przełączniki określają widoczność\nna karcie i kodzie";
+
+"nimple_code_footer" = "Kod może być skanowany z czytnikiem kodów kreskowych lub Nimple";
+
+"tab_nimple_card_title" = "Card";
+"tab_nimple_code_title" = "Code";
+"tab_contacts_title" = "Kontakty";
+"tab_pro_title" = "Pro Version";
+"tab_settings_title" = "Ustawieniach";
+
+"twitter_not_found_alert_title" = "Bez profil Twittera.";
+"twitter_not_found_alert_message" = "Zaloguj się do Twittera w Ustawieniach iPhone'a > Twitter.";
+
+"twitter_not_allowed_alert_title" = "Bez dostępu do Twittera.";
+"twitter_not_allowed_alert_message" = "Włącz dostęp do Twittera w Ustawieniach iPhone'a > Twitter > Nimple.";
+
+"msg_box_social_logout_facebook_title" = "Odłącz Facebooka?";
+"msg_box_social_logout_twitter_title" = "Odłącz Twittera?";
+"msg_box_social_logout_xing_title" = "Odłącz XING?";
+"msg_box_social_logout_linkedin_title" = "Odłącz LinkedIn?";
+
+"msg_box_social_logout_activity1" = "Odłącz";
+"msg_box_social_logout_activity2" = "Anuluj";
+
+"pro_intro_text" = "Nimple Pro daje nowe przydatne funkcje, takie jak:";
+"pro_feature_A" = "Wyślij swoje karty, kodu i kontakty za pośrednictwem poczty elektronicznej.";
+"pro_feature_B" = "Tworzenie wielu kart i kodów (Na przykład, w firmie i university).";
+
+"share_contact" = "Wyślij kontakt";
+
+"alertview_camera_permission_title" = "No Camera-Access";
+"alertview_camera_permission_text" = "Nimple has no access to use your camera, thus Nimple is not able to scan QR-Codes. You can allow Nimple to use your camera by opening Settings -> Privacy -> Camera.";
+"alertview_camera_permission_button" = "Okay";
+
+"header_code" = "Dotknij kod aby wysłać go";
+"header_card" = "Dotknij karta, aby go statek";
+
+"unlock_pro_button" = "Kupić w wersji Pro";
+"restore_pro_button" = "Przywracanie wersji Pro";
