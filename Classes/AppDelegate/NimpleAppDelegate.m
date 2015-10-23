@@ -9,12 +9,6 @@
 #define XING_CONSUMER_KEY    @"247e95c9f304f6c5aaff"
 #define XING_CONSUMER_SECRET @"cebe8869323e6d227257361eeabf05046c243721"
 
-#define NIMPLE_MAIN_COLOR 0x850032
-#define UIColorFromRGB(rgbValue) [UIColor \
-colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
-green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
-blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
-
 #import <sys/types.h>
 #import <sys/sysctl.h>
 #import "NimpleAppDelegate.h"
@@ -62,8 +56,13 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 - (void)setupNavigationBar
 {
-    [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(NIMPLE_MAIN_COLOR)];
-    [[UITabBar appearance] setTintColor:UIColorFromRGB(NIMPLE_MAIN_COLOR)];
+    [[UINavigationBar appearance] setBarTintColor:[self sagMainColor]];
+    [[UITabBar appearance] setTintColor:[self sagMainColor]];
+}
+
+- (UIColor *)sagMainColor
+{
+    return [UIColor colorWithRed:76.0/255.0 green:76.0/255.0 blue:76.0/255.0 alpha:1.0];
 }
 
 - (UITabBarController *)tabBarController
@@ -109,7 +108,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     settings.selectedImage = [[UIImage imageNamed:@"tabbar_selected_settings"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     settings.image = [[UIImage imageNamed:@"tabbar_settings"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    [[self tabBar] setTintColor:UIColorFromRGB(NIMPLE_MAIN_COLOR)];
+    [[self tabBar] setTintColor:[self sagMainColor]];
 }
 
 - (NSString *)deviceModel
