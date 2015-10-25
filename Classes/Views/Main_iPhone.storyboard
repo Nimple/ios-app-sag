@@ -184,27 +184,16 @@ Test</string>
                                     <outletCollection property="gestureRecognizers" destination="fCp-08-aSf" appends="YES" id="jsy-ym-cr3"/>
                                 </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_nimple" translatesAutoresizingMaskIntoConstraints="NO" id="Mgu-fw-IjD">
-                                <rect key="frame" x="98" y="188" width="120" height="120"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="6MM-hg-yY4"/>
-                                    <constraint firstAttribute="height" constant="120" id="bO6-xj-Vhr"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.55294117649999996" green="0.031372549020000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="trE-Z2-Fha" secondAttribute="bottom" constant="80" id="29Q-Yl-vP5"/>
-                            <constraint firstItem="Mgu-fw-IjD" firstAttribute="leading" secondItem="c7o-rU-VLc" secondAttribute="leading" constant="98" id="ArD-CD-kfX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="als-zh-r6e" secondAttribute="trailing" constant="8" id="DYt-Ug-ejK"/>
                             <constraint firstAttribute="trailing" secondItem="trE-Z2-Fha" secondAttribute="trailing" constant="25" id="GaH-kp-78u"/>
                             <constraint firstItem="7dE-Fy-tEd" firstAttribute="top" secondItem="c7o-rU-VLc" secondAttribute="top" constant="79" id="Skj-36-WkH"/>
-                            <constraint firstAttribute="trailing" secondItem="Mgu-fw-IjD" secondAttribute="trailing" constant="102" id="TOS-pd-gJN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6BA-IE-nrP" secondAttribute="trailing" constant="24" id="YoR-iO-iDo"/>
-                            <constraint firstItem="Mgu-fw-IjD" firstAttribute="top" secondItem="7dE-Fy-tEd" secondAttribute="bottom" constant="63" id="aY0-1v-7yW"/>
                             <constraint firstAttribute="trailing" secondItem="7dE-Fy-tEd" secondAttribute="trailing" constant="24" id="avP-7o-vZo"/>
                             <constraint firstItem="trE-Z2-Fha" firstAttribute="leading" secondItem="c7o-rU-VLc" secondAttribute="leading" constant="25" id="d0i-4x-8Ce"/>
                             <constraint firstItem="6BA-IE-nrP" firstAttribute="top" secondItem="c7o-rU-VLc" secondAttribute="topMargin" constant="128" id="ilP-MS-B3Y"/>
@@ -289,10 +278,10 @@ auf deiner Karte und in deinem Code</string>
                         </view>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EditInputViewCell" id="bQT-iM-lrq" userLabel="EditInputViewCell" customClass="EditInputViewCell">
-                                <rect key="frame" x="0.0" y="178.5" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="179" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bQT-iM-lrq" id="Zkh-j9-886">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J4o-ny-TGZ">
@@ -332,10 +321,10 @@ auf deiner Karte und in deinem Code</string>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ConnectSocialProfileCell" rowHeight="60" id="wot-6T-nBg" userLabel="ConnectSocialProfileViewCell" customClass="ConnectSocialProfileViewCell">
-                                <rect key="frame" x="0.0" y="222.5" width="320" height="60"/>
+                                <rect key="frame" x="0.0" y="223" width="320" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wot-6T-nBg" id="XCc-uI-3Up">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBC-6f-2xV">
@@ -382,10 +371,10 @@ auf deiner Karte und in deinem Code</string>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EditAddressInputViewCell" rowHeight="86" id="2WJ-XE-ug6" userLabel="EditAddressInputViewCell" customClass="EditAddressInputViewCell">
-                                <rect key="frame" x="0.0" y="282.5" width="320" height="86"/>
+                                <rect key="frame" x="0.0" y="283" width="320" height="86"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2WJ-XE-ug6" id="25U-rl-qEx">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="85.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jk6-Az-eE6" userLabel="TextField - Street">
@@ -819,7 +808,7 @@ Test</string>
                                 <rect key="frame" x="0.0" y="86" width="320" height="165"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Ca-QZ-fxh" id="plr-gO-2rl">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="164.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="165"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vorname Nachname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZm-ic-gp5">
@@ -1331,7 +1320,7 @@ Test</string>
                                         <rect key="frame" x="0.0" y="99" width="320" height="210"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qz8-JA-z4N" id="1uM-lw-Jvq">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="209.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_nimple" translatesAutoresizingMaskIntoConstraints="NO" id="hxe-6o-OuE">
@@ -1383,7 +1372,7 @@ Sollten Sie kein Mitarbeitender der Software AG sein, laden Sie sich bitte die o
                                         <rect key="frame" x="0.0" y="329" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0GN-9o-Iiw" id="bdo-BX-Vgb">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAQ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryK-km-Fx0">
@@ -1406,7 +1395,7 @@ Sollten Sie kein Mitarbeitender der Software AG sein, laden Sie sich bitte die o
                                         <rect key="frame" x="0.0" y="373" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HNY-fR-P7U" id="0Qi-Hy-6Te">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AGB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0DQ-Fk-D1R">
@@ -1429,7 +1418,7 @@ Sollten Sie kein Mitarbeitender der Software AG sein, laden Sie sich bitte die o
                                         <rect key="frame" x="0.0" y="417" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I5I-bw-jUn" id="lwJ-Vy-gyP">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Datenschutzerklärung" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acu-UJ-gkX">
@@ -1453,7 +1442,7 @@ Sollten Sie kein Mitarbeitender der Software AG sein, laden Sie sich bitte die o
                                         <rect key="frame" x="0.0" y="461" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qUc-Ll-Qe0" id="fYL-fA-dL8">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Impressum" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIT-Ux-pgO">
@@ -1474,13 +1463,63 @@ Sollten Sie kein Mitarbeitender der Software AG sein, laden Sie sich bitte die o
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="" id="IJz-0S-X2M">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="nimple_homepage" id="NFQ-Td-Ygy">
+                                        <rect key="frame" x="0.0" y="525" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NFQ-Td-Ygy" id="RLN-eA-9pM">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Homepage von Nimple" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wH3-m6-ulC">
+                                                    <rect key="frame" x="20" y="11" width="267" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="pfj-rr-VON" appends="YES" id="Cwb-Sy-yhV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="softwareag_homepage" id="XnQ-v2-CYh">
+                                        <rect key="frame" x="0.0" y="569" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XnQ-v2-CYh" id="vUD-nF-eEB">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Homepage der Software AG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dpo-yN-a20">
+                                                    <rect key="frame" x="20" y="11" width="267" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="y5s-N2-o84" appends="YES" id="P6q-1c-a84"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                             <tableViewSection headerTitle="" id="Ops-Rb-7pM">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="facebook" id="W9B-y7-a1E">
-                                        <rect key="frame" x="0.0" y="525" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="633" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W9B-y7-a1E" id="KkU-aY-akL">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nimple auf Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ph4-30-IRp">
@@ -1500,10 +1539,10 @@ Sollten Sie kein Mitarbeitender der Software AG sein, laden Sie sich bitte die o
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="feedback" id="bHX-Fc-jha" userLabel="Table View Cell - twitter">
-                                        <rect key="frame" x="0.0" y="569" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="677" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bHX-Fc-jha" id="R7S-Jz-LfG">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nimple auf Twitter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="019-h2-psV" userLabel="Label - twitter">
@@ -1523,10 +1562,10 @@ Sollten Sie kein Mitarbeitender der Software AG sein, laden Sie sich bitte die o
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="share" id="arD-Aq-emk">
-                                        <rect key="frame" x="0.0" y="613" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="721" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="arD-Aq-emk" id="ies-Vs-kax">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Teile Nimple" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8UU-9z-zGn">
@@ -1546,10 +1585,10 @@ Sollten Sie kein Mitarbeitender der Software AG sein, laden Sie sich bitte die o
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="feedback" id="Fk2-ne-SRj">
-                                        <rect key="frame" x="0.0" y="657" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="765" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fk2-ne-SRj" id="x3H-Xb-UQB">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feedback" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWw-ZE-psO">
@@ -1630,12 +1669,22 @@ Sollten Sie kein Mitarbeitender der Software AG sein, laden Sie sich bitte die o
                         <action selector="twitterClicked:" destination="qLV-mL-T8G" id="kxz-9p-QAQ"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="pfj-rr-VON" userLabel="Tap Gesture Recognizer - nimple homepage">
+                    <connections>
+                        <action selector="nimpleHomepageClicked:" destination="qLV-mL-T8G" id="fDt-uk-uk6"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="y5s-N2-o84" userLabel="Tap Gesture Recognizer - softwareag homepage">
+                    <connections>
+                        <action selector="softwareagHomepageClicked:" destination="qLV-mL-T8G" id="ijn-AA-Ahk"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="20" y="1102"/>
         </scene>
     </scenes>
     <resources>
-        <image name="add-contact" width="49" height="48"/>
+        <image name="add-contact" width="30" height="29"/>
         <image name="address" width="36" height="36"/>
         <image name="arrow_up_middle" width="42" height="142"/>
         <image name="arrow_up_short" width="42" height="84"/>
@@ -1649,7 +1698,7 @@ Sollten Sie kein Mitarbeitender der Software AG sein, laden Sie sich bitte die o
         <image name="ic_round_xing" width="59" height="59"/>
         <image name="job" width="36" height="36"/>
         <image name="mobile" width="36" height="36"/>
-        <image name="navbar_share_contacts" width="44" height="44"/>
+        <image name="navbar_share_contacts" width="27" height="27"/>
         <image name="phone" width="36" height="36"/>
         <image name="tabbar_contacts" width="21" height="24"/>
         <image name="tabbar_nimple-card" width="23" height="23"/>

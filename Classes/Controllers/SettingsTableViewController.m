@@ -90,6 +90,18 @@
     [[UIApplication sharedApplication] openURL:url];
 }
 
+- (IBAction)nimpleHomepageClicked:(id)sender
+{
+    NSURL *url = [NSURL URLWithString:@"http://www.nimple.de/"];
+    [[UIApplication sharedApplication] openURL:url];
+}
+
+- (IBAction)softwareagHomepageClicked:(id)sender
+{
+    NSURL *url = [NSURL URLWithString:@"http://www.softwareag.com/de/"];
+    [[UIApplication sharedApplication] openURL:url];
+}
+
 - (IBAction)shareNimpleClicked:(id)sender
 {
     NSString *text = NimpleLocalizedString(@"settings.share-text");
