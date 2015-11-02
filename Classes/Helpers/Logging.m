@@ -9,11 +9,8 @@
 #import "Logging.h"
 #import "NimpleAppDelegate.h"
 
-// dev token
-//#define MIXPANEL_TOKEN @"6e3eeca24e9b2372e8582b381295ca0c"
-
-// prod token
-#define MIXPANEL_TOKEN @"c0d8c866df9c197644c6087495151c7e"
+// SAG prod token
+#define MIXPANEL_TOKEN @"3f576230b58eaf1f289964f39f4adc50"
 
 // hash of flyer contact
 #define FLYER_CONTACT_HASH @"9d2b064c3d89c867916c5329f079fa66"
